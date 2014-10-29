@@ -9,11 +9,11 @@ end
 def draw_board(board)
   system 'clear'
   puts
-  puts " #{ board[1] } | #{ board[2] } | #{ board[3] } "
+  puts " #{board[1]} | #{board[2]} | #{board[3]} "
   puts '-----------'
-  puts " #{ board[4] } | #{ board[5] } | #{ board[6] } "
+  puts " #{board[4]} | #{board[5]} | #{board[6]} "
   puts '-----------'
-  puts " #{ board[7] } | #{ board[8] } | #{ board[9] } "
+  puts " #{board[7]} | #{board[8]} | #{board[9]} "
   puts
 end
 
@@ -55,9 +55,9 @@ begin
 end until winner || empty_positions(board).empty?
 
 if winner == 'You'
-  puts "Awesome! #{ winner} won!"
+  puts "Awesome! #{winner} won!"
 elsif winner == 'The computer'
-  puts "#{ winner } won... Better luck next time."
+  puts "#{winner} won... Better luck next time."
 else
   puts 'It\'s a tie!'
 end
